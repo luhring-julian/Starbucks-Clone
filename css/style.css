@@ -1,0 +1,107 @@
+/*Reset padrão das configurações do navegador*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Classes auxiliares*/
+.center{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+/*Estilização*/
+
+/*Cabeçalho*/
+html, body{
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+header{
+    padding: 20px 0;
+    height: 200px;
+}
+
+.logo{
+    width: 50%;
+}
+
+.menu{
+    width: 50%;
+    text-align: right;
+    padding-top: 30px;
+}
+
+.menu a{
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+/*Conteúdo Principal*/
+section.sobre{
+    position: relative;
+    height: calc(100% - 200px);
+}
+
+.extras{
+    position: absolute;
+    bottom: -590px;
+    right: -650px;
+    width: 1200px;
+    height: 1200px;
+    background-color: #017143;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.social-media{
+    position: absolute;
+    right: 680px;
+    top: 200px;
+    z-index: 2;
+}
+
+.social-media img{
+    display: block;
+    max-width: 40px;
+    margin: 20px auto;
+}
+
+.about-text{
+    margin-top: 50px;
+}
+
+.about-text h1{
+    font-size: 50px;
+}
+
+.about-text span{
+    color: #017143;
+}
+
+.about-text p{
+    margin: 20px 0;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    max-width: 800px;
+}
+
+.about-text button{
+    border: 0;
+    background-color: #017143;
+    color: #fff;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+}
